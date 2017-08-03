@@ -6,18 +6,19 @@ import android.os.Bundle;
 
 import org.zackratos.ultimatebar.UltimateBar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        UltimateBar ultimateBar = new UltimateBar(this);
+        //初始化UltimateBar
+//        UltimateBar ultimateBar = new UltimateBar(this);
 
         // 1.自定义颜色的状态栏和导航栏
         //参数1：颜色值
-        //参数2：颜色的深度值0——255之间，为0时就是第一个参数的颜色值，不为0时计算最总值
+        //参数2：颜色的深度值0——255之间，为0时就是第一个参数的颜色值，不为0时计算最终值
         // ultimateBar.setColorBar(ContextCompat.getColor(this, R.color.colorAccent), 50);
 
         // 2.半透明状态栏和导航栏
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
        // ultimateBar.setTransparentBar(Color.RED, 50);
 
       // 3.沉浸式状态栏和导航栏
-        ultimateBar.setImmersionBar();
+//        ultimateBar.setImmersionBar();
 
         // 4.隐藏状态栏和导航栏:在 onWindowFocusChanged() 方法
 
@@ -44,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus){
-            //隐藏状态栏和导航栏
-            UltimateBar ultimateBar = new UltimateBar(this);
-            ultimateBar.setHintBar();
-        }
+//        if (hasFocus){
+//            //隐藏状态栏和导航栏
+//            UltimateBar ultimateBar = new UltimateBar(this);
+//            ultimateBar.setHintBar();
+//        }
     }
 }
