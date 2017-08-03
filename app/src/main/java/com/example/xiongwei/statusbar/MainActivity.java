@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
        // 第一步：首先需要设置 DrawerLayout 下面的主局部中添加 android:fitsSystemWindows="true"
 //        注意是 DrawerLayout 下面的主布局，DrawerLayout 本身和抽屉布局都不能添加。
         //第二步：UltimateBar ultimateBar = new UltimateBar(this);
-//                  ultimateBar.setColorBarForDrawer(ContextCompat.getColor(this, R.color.DeepSkyBlue), 50);
-//                  参数1：颜色值
+//                ultimateBar.setColorBarForDrawer(ContextCompat.getColor(this, R.color.DeepSkyBlue), 50);
+//                参数1：颜色值
 //                参数2：不透明度
 
     }
